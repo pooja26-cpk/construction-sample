@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "secondary-container": "#fd8b00",
+                "on-primary": "#ffffff",
+                "inverse-surface": "#2f3131",
+                "tertiary-container": "#592300",
+                "primary-container": "#003366",
+                "on-primary-container": "#799dd6",
+                "surface-container": "#eeeeee",
+                "on-secondary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "secondary": "#904d00",
+                "surface": "#f9f9f9",
+                "error": "#ba1a1a",
+                "surface-container-highest": "#e2e2e2",
+                "surface-bright": "#f9f9f9",
+                "on-tertiary-fixed": "#341100",
+                "outline-variant": "#c3c6d1",
+                "on-tertiary-container": "#d8885c",
+                "on-tertiary": "#ffffff",
+                "inverse-on-surface": "#f1f1f1",
+                "on-surface": "#1a1c1c",
+                "surface-dim": "#dadada",
+                "surface-tint": "#3a5f94",
+                "on-secondary-container": "#603100",
+                "on-background": "#1a1c1c",
+                "tertiary-fixed-dim": "#ffb690",
+                "on-surface-variant": "#43474f",
+                "secondary-fixed": "#ffdcc3",
+                "on-primary-fixed-variant": "#1f477b",
+                "outline": "#737780",
+                "surface-variant": "#e2e2e2",
+                "on-secondary-fixed-variant": "#6e3900",
+                "tertiary-fixed": "#ffdbca",
+                "surface-container-low": "#f3f3f3",
+                "on-primary-fixed": "#001b3c",
+                "on-error-container": "#93000a",
+                "primary-fixed-dim": "#a7c8ff",
+                "secondary-fixed-dim": "#ffb77d",
+                "inverse-primary": "#a7c8ff",
+                "on-secondary-fixed": "#2f1500",
+                "surface-container-high": "#e8e8e8",
+                "primary-fixed": "#d5e3ff",
+                "on-tertiary-fixed-variant": "#723610",
+                "tertiary": "#381300",
+                "primary": "#001e40",
+                "error-container": "#ffdad6",
+                "background": "#f9f9f9",
+                "on-error": "#ffffff"
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-layering {
+            background-color: var(--tw-bg-surface-container-low);
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px #001e40;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b-2 border-[#001e40] bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-black text-[#001e40] dark:text-white tracking-tighter">
+                BuildCore
+            </div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center space-x-10">
+<a class="font-['Manrope'] font-bold tracking-tight uppercase text-sm text-[#001e40] dark:text-slate-300 hover:text-[#fd8b00] transition-colors" href="home.html">Home</a>
+<a class="font-['Manrope'] font-bold tracking-tight uppercase text-sm text-[#001e40] dark:text-slate-300 hover:text-[#fd8b00] transition-colors" href="about.html">About</a>
+<a class="font-['Manrope'] font-bold tracking-tight uppercase text-sm text-[#001e40] dark:text-slate-300 hover:text-[#fd8b00] transition-colors" href="services.html">Services</a>
+<a class="font-['Manrope'] font-bold tracking-tight uppercase text-sm text-[#fd8b00] border-b-2 border-[#fd8b00] pb-1" href="projects.html">Projects</a>
+<a class="font-['Manrope'] font-bold tracking-tight uppercase text-sm text-[#001e40] dark:text-slate-300 hover:text-[#fd8b00] transition-colors" href="contact.html">Contact</a>
+</div>
+<a href="quote.html" class="bg-secondary-container text-on-secondary-container px-6 py-2.5 font-headline font-bold text-sm tracking-tight scale-95 active:scale-90 transition-transform">
+                Get Free Quote
+            </a>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Hero Header Section -->
+<header class="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<span class="font-label font-bold text-xs uppercase tracking-[0.2em] text-secondary mb-4 block">01 / ARCHIVE</span>
+<h1 class="font-headline font-extrabold text-6xl md:text-8xl text-primary tracking-tighter leading-[0.9] mb-8">
+                    Built to <br/>Endure.
+                </h1>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed max-w-lg">
+                    A definitive collection of our structural achievements in Chennai. From luxury residential skylines to complex industrial ecosystems.
+                </p>
+</div>
+<div class="flex flex-wrap gap-4 border-l-4 border-primary pl-6 py-2">
+<div class="flex flex-col">
+<span class="font-headline font-black text-3xl text-primary">150+</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-widest opacity-60">Deliveries</span>
+</div>
+<div class="w-px h-12 bg-outline-variant/30 mx-4"></div>
+<div class="flex flex-col">
+<span class="font-headline font-black text-3xl text-primary">08</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-widest opacity-60">District Reach</span>
+</div>
+</div>
+</header>
+<!-- Filter Bar -->
+<section class="mb-16 sticky top-24 z-40 bg-surface/95 backdrop-blur-sm py-4 border-y border-outline-variant/10">
+<div class="flex items-center gap-8 overflow-x-auto no-scrollbar">
+<button class="font-label font-bold text-xs uppercase tracking-widest text-primary border-b-2 border-secondary pb-1 whitespace-nowrap">All Projects</button>
+<button class="font-label font-bold text-xs uppercase tracking-widest text-outline hover:text-primary transition-colors whitespace-nowrap">Residential</button>
+<button class="font-label font-bold text-xs uppercase tracking-widest text-outline hover:text-primary transition-colors whitespace-nowrap">Commercial</button>
+<button class="font-label font-bold text-xs uppercase tracking-widest text-outline hover:text-primary transition-colors whitespace-nowrap">Interior</button>
+</div>
+</section>
+<!-- Project Grid (Asymmetric Bento Style) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10">
+<!-- Project 01 - Large Feature -->
+<article class="md:col-span-8 group relative overflow-hidden bg-surface-container-highest">
+<div class="aspect-[16/9] w-full overflow-hidden">
+<img alt="Modern Concrete Luxury Villa" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="dramatic wide angle shot of a brutalist concrete luxury villa in Chennai with sharp geometric lines and sunset lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWALrzhjBYYArAMM5egqLeBW74DH0C210tpzHrKmpVZtn8QdMa4Z1AD6gCJBRYsvyya9ydoYWZOrrnjmXs2wJb5EjxYVxIWWhtbDkbPYWj8Iga-yV8faFErO-VZkiMYzz2R3nZ7wU73gDzFCKj9o3rYmI_MoNNXMbJk53h9grf5Ofn3T2XZxt-ZD4_6NLWAFEY5nfdmIEZYTlV19ElSFZ7goOrNQB5rwDl9GCvNYc9Rv9WHKDsKiD45lbQRD_Of2OBmmv8talixEXh"/>
+</div>
+<!-- Project Detail Overlay -->
+<div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
+<div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+<span class="font-label text-secondary font-bold text-xs tracking-widest mb-2 block">RESIDENTIAL / CHENNAI</span>
+<h3 class="font-headline font-extrabold text-4xl text-on-primary tracking-tighter mb-4">The Obsidian Manor</h3>
+<p class="text-on-primary/70 max-w-md font-body text-sm mb-6">Innovative structural framing for a 12,000 sq.ft private estate using reinforced polymer-concrete composites.</p>
+<a class="inline-flex items-center gap-2 text-secondary font-bold text-xs uppercase tracking-widest group/link" href="#">
+                            View Case Study 
+                            <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Project 02 - Vertical -->
+<article class="md:col-span-4 group relative overflow-hidden bg-surface-container-highest">
+<div class="h-full w-full overflow-hidden aspect-[3/4]">
+<img alt="Steel Glass Corporate Tower" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="low angle architectural shot of a glass and steel skyscraper in Chennai reflecting the blue sky and surrounding urban landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBosdsBSYyaKwQ5FhMQ9d_Yz_92kKXlXACOBuxcoUxPOfwkU7CRugTmPBCzKuUpIojndUGzwaDj9_s7LyZg5LVLJuz4hmzBRK3T8ZmbKZvPfK7uWOLAIYOoCnG7Fb34NchO1oXgOTvkcRwVmJmwm0ZUxmk-0KF4FjNIzaJKcRRcZlm5jgerK35vr_nwyLGa4tgq0HCVc4pH2KcyOtvltOwTAWlkieqsK72coghiHXpJAuoyaBtsEuOD3UTo3Q_bNQIt9VdLDAeo50A9"/>
+</div>
+<div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<span class="font-label text-secondary font-bold text-xs tracking-widest mb-2 block">COMMERCIAL / CHENNAI</span>
+<h3 class="font-headline font-extrabold text-2xl text-on-primary tracking-tighter mb-4">Skyline HQ</h3>
+<a class="inline-flex items-center gap-2 text-secondary font-bold text-xs uppercase tracking-widest" href="#">
+                        Details <span class="material-symbols-outlined text-sm">arrow_outward</span>
+</a>
+</div>
+</article>
+<!-- Project 03 - Small -->
+<article class="md:col-span-4 group relative overflow-hidden bg-surface-container-highest">
+<div class="aspect-square w-full overflow-hidden">
+<img alt="Modern Minimalist Interior" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="clean minimalist interior design of a high-end apartment in Chennai featuring wooden slats and soft warm cove lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0cHvsZC0Y4iezAIRUFr-W6iEKkKKc-yo4CWNSG65io5HsSOM1CG90s_G7CLDx4UMVN61VCzVxNsvGgP8uwsXETd0Pz5G1iyGBr-v2cKc1zliRQlYSIZqMqvLOllyye168SAUA1e-HIm7RscqteKM6MPZLT7hdpihPygQkH2IONwJEB-NwP3gKL9G4ZceFBU8F0CiN9sq48H3eMhMu8MhCDafCvX62Bwr-P0liEii7xAbWbcy2DeotsPnFbdEz2ztnT9QRJPgkPuMj"/>
+</div>
+<div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<span class="font-label text-secondary font-bold text-xs tracking-widest mb-2 block">INTERIOR / CHENNAI</span>
+<h3 class="font-headline font-extrabold text-2xl text-on-primary tracking-tighter mb-4">Nordic Inset</h3>
+</div>
+</article>
+<!-- Project 04 - Large Horizontal -->
+<article class="md:col-span-8 group relative overflow-hidden bg-surface-container-highest">
+<div class="aspect-[21/9] w-full overflow-hidden">
+<img alt="Industrial Warehouse Complex" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="expansive view of a modern industrial warehouse and logistics park in Chennai with metallic cladding and perfect symmetry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZMEq6pv9q0rjMsY4p9XwnGZzwkTVK0eTYEnITHB-9vwi7kIAmHK9sDxpWDeyEGUXmzoCVODWlsjd9TAEj4QNoWMFnfWDOcMArieBDTyczzt3QJv0pwvEwoDiKBsBPF91yBViyQIKNdWB8TUAi16DBktmHQvR8lMy3KVfsrEdIagY4Y0O50gnXHWpTNRetl2fBOBAL30Zm9ex8ypGtYSxxnlyeMH9RqhemE569BSBpdQ38Myqu2QKKfCRv3IUfxVQkizJB9OEh-wZ7"/>
+</div>
+<div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
+<span class="font-label text-secondary font-bold text-xs tracking-widest mb-2 block">COMMERCIAL / CHENNAI</span>
+<h3 class="font-headline font-extrabold text-4xl text-on-primary tracking-tighter mb-4">Titan Logistics Hub</h3>
+</div>
+</article>
+<!-- Project 05 - Feature -->
+<article class="md:col-span-6 group relative overflow-hidden bg-surface-container-highest">
+<div class="aspect-[4/3] w-full overflow-hidden">
+<img alt="Contemporary Waterfront Home" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="luxury waterfront home with floor to ceiling windows and a swimming pool overlooking the ocean in Chennai at blue hour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtbAPY3mfLqXo5Enb3OE7KD1ScRrF7k9aLs1zZ9K2s2RlUMNRswjaDJXdq3-4U-iAx0xTPzWl-V_LuXpkHSye7SWrPwRM7ASd3adpDfJLUVzlZc4digU1NIrt6Xyn5yXDQkKfmLTd1Ul3uHtatbSgHYKtkaOorI-kkeEyJgImpEwjrnb36TQgtIfQack1S6B57jinfIxRgGLBGtqJ5-3p-1JpHm5u9ojAgebN_uLxbivLxgVFuZoU-53a_8TBNAGaMvCkHvwEY5Az3"/>
+</div>
+<div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
+<span class="font-label text-secondary font-bold text-xs tracking-widest mb-2 block">RESIDENTIAL / CHENNAI</span>
+<h3 class="font-headline font-extrabold text-3xl text-on-primary tracking-tighter mb-4">The Azure Pavilion</h3>
+</div>
+</article>
+<!-- Project 06 - Feature -->
+<article class="md:col-span-6 group relative overflow-hidden bg-surface-container-highest">
+<div class="aspect-[4/3] w-full overflow-hidden">
+<img alt="Tech Park Atrium" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="grand corporate atrium with massive skylights and indoor greenery in a tech park building in Chennai" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLyAt7ieMMCPQK85tpq-_Ej_s_U1keTzP1JVjrkhT5oPnOAb00Po7BNnY6Wn2HWyBV_3kSfY5mqWwp9ftErL-6uin7Eoy2x25peeZPlwKpOZb2ZFcsJLlK8jO1D1h9u5frjjJCjUm3W3e45T5TUm_SiI7HnMLaidHjd_eYW2d_AeQdvZ2zFrlAPRk-iKA3lwMxy7wh57wW-Z039gMvX0qlhzPa3olvqAF9wu4952Tu1JHkU6tj5ZkJLGBOYEuiOnh1Gv9OUIxBj6x5"/>
+</div>
+<div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
+<span class="font-label text-secondary font-bold text-xs tracking-widest mb-2 block">COMMERCIAL / CHENNAI</span>
+<h3 class="font-headline font-extrabold text-3xl text-on-primary tracking-tighter mb-4">Cortex Tech Park</h3>
+</div>
+</article>
+</section>
+<!-- Load More Section -->
+<section class="mt-24 text-center">
+<button class="group inline-flex items-center gap-6 border-2 border-primary px-12 py-6 hover:bg-primary hover:text-on-primary transition-all duration-300">
+<span class="font-headline font-black text-xl tracking-tighter uppercase">Load Historical Archive</span>
+<span class="material-symbols-outlined group-hover:rotate-90 transition-transform">add</span>
+</button>
+</section>
+</main>
+<!-- SideNavBar (Floating Action Button) -->
+<div class="fixed bottom-8 right-8 z-[100]">
+<div class="group relative flex items-center justify-end">
+<div class="mr-4 opacity-0 group-hover:opacity-100 transition-opacity bg-primary text-on-primary px-4 py-2 text-xs font-bold tracking-widest uppercase pointer-events-none whitespace-nowrap">
+                CONSULT AN ENGINEER
+            </div>
+<button class="bg-[#fd8b00] text-white rounded-full p-4 h-16 w-16 flex items-center justify-center shadow-[0_12px_32px_rgba(0,30,64,0.15)] hover:scale-110 hover:rotate-3 transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+</button>
+</div>
+</div>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 mt-24 bg-[#001e40] dark:bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<!-- Brand Column -->
+<div class="flex flex-col gap-6">
+<div class="text-xl font-bold text-[#fd8b00]">BuildCore</div>
+<p class="font-['Inter'] text-sm leading-relaxed text-slate-300">
+                    Architectural integrity and structural precision for Chennai's most ambitious developments.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-white opacity-50 hover:opacity-100 cursor-pointer">social_leaderboard</span>
+<span class="material-symbols-outlined text-white opacity-50 hover:opacity-100 cursor-pointer">alternate_email</span>
+<span class="material-symbols-outlined text-white opacity-50 hover:opacity-100 cursor-pointer">share</span>
+</div>
+</div>
+<!-- Quick Links -->
+<div>
+<h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-xs">Quick Links</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="font-['Inter'] text-sm text-slate-300 hover:text-white hover:translate-x-1 transition-transform duration-200 block" href="#">Home</a></li>
+<li><a class="font-['Inter'] text-sm text-slate-300 hover:text-white hover:translate-x-1 transition-transform duration-200 block" href="#">Services</a></li>
+<li><a class="font-['Inter'] text-sm text-[#fd8b00] underline underline-offset-4 block" href="#">Projects</a></li>
+<li><a class="font-['Inter'] text-sm text-slate-300 hover:text-white hover:translate-x-1 transition-transform duration-200 block" href="#">Expert Consultation</a></li>
+</ul>
+</div>
+<!-- Contact Info -->
+<div>
+<h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-xs">Contact Info</h4>
+<ul class="flex flex-col gap-4">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-[#fd8b00] text-lg">location_on</span>
+<span class="font-['Inter'] text-sm text-slate-300">Chennai, Tamil Nadu</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-[#fd8b00] text-lg">phone</span>
+<span class="font-['Inter'] text-sm text-slate-300">+91 44 2854 3948</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-[#fd8b00] text-lg">mail</span>
+<span class="font-['Inter'] text-sm text-slate-300">contact@buildcore.in</span>
+</li>
+</ul>
+</div>
+<!-- CTA Newsletter -->
+<div>
+<h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-xs">Project Updates</h4>
+<div class="flex flex-col gap-4">
+<input class="bg-slate-900 border-none text-white text-sm px-4 py-3 focus:ring-1 focus:ring-secondary" placeholder="Email Address" type="email"/>
+<button class="bg-secondary-container text-on-secondary-container px-6 py-3 font-headline font-bold text-xs uppercase tracking-widest">Subscribe</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-['Inter'] text-xs text-slate-400 opacity-80">
+                © 2024 BuildCore Constructions. All rights reserved.
+            </p>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-xs text-slate-400 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs text-slate-400 hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
